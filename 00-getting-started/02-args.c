@@ -9,6 +9,7 @@ int main(int argc, char *argv[], char *envp[])
         printf("%s\n", argv[i]);
     }
 
+    printf("======================\n");
     printf("environment variables:\n");
     while (*tmp != NULL) {
         printf("%s\n", *tmp);
