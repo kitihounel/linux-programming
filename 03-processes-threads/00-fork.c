@@ -10,13 +10,13 @@ int main()
     id = fork();
     if (id == 0) {
         // Code only executed by child process
-        printf("Inside child process: %d\n", getpid());
+        printf("Inside child process - PID: %d\n", getpid());
     } else if (id < 0) {
         fprintf(stderr, "Failed to fork\n");
         exit(1);
     } else {
         // Code only executed by parent process
-        printf("Inside parent process: %d\n", getpid());
+        printf("Inside parent process - PID: %d - child PID: %d\n", getpid(), id);
     }
 
     return 0;
