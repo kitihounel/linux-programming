@@ -20,7 +20,8 @@ void ls(const char *path)
 }
 
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
     
     const char *path;
 

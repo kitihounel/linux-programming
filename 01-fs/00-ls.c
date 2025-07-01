@@ -1,7 +1,8 @@
 #include <dirent.h> 
 #include <stdio.h>
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
     DIR *dir;
     struct dirent *entry;
     const char *path;
