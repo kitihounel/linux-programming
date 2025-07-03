@@ -2,15 +2,16 @@
 #include <signal.h>
 #include <unistd.h>
 
-void sig_handler(int signo)
+void signal_handler(int signal_number)
 {
-    if (signo == SIGINT)
+    if (signal_number == SIGINT) {
         printf("Received SIGINT\n");
+    }
 }
 
 int main(void)
 {
-    if (signal(SIGINT, sig_handler) == SIG_ERR) {
+    if (signal(SIGINT, signal_handler) == SIG_ERR) {
         printf("\nCan't catch SIGINT\n");
     }
 
