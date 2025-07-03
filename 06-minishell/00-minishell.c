@@ -1,3 +1,4 @@
+/* See https://segfault42.github.io/posts/minishell for a complete tutorial. */
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
